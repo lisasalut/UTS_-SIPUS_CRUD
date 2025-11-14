@@ -1,0 +1,128 @@
+/* ===== STYLE DASAR ===== */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #eef2f7; /* sedikit lebih lembut */
+  margin: 20px;
+  color: #333;
+}
+
+/* ===== HEADING ===== */
+h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #343a40;
+}
+
+/* ===== TOMBOL TAMBAH ===== */
+.btn-tambah {
+  background: linear-gradient(90deg, #198754, #20c997);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.btn-tambah:hover {
+  background: linear-gradient(90deg, #157347, #1aa179);
+  transform: translateY(-2px);
+}
+
+/* ===== TABEL ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header tabel */
+th {
+  background: linear-gradient(90deg, #4e73df, #224abe);
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+  padding: 14px 16px;
+}
+
+/* Isi tabel */
+td {
+  padding: 14px 16px;
+  text-align: center;
+  color: #333;
+}
+
+/* Warna bergantian tiap baris */
+tr:nth-child(even) {
+  background-color: #f2f5ff;
+}
+
+/* Hover baris */
+tr:hover {
+  background-color: #e6ecff;
+  transition: 0.2s;
+}
+
+/* ===== TOMBOL AKSI ===== */
+.btn-edit {
+  background-color: #ffc107;
+  color: #000;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-edit:hover {
+  background-color: #e0a800;
+}
+
+.btn-hapus {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.btn-hapus:hover {
+  background-color: #bb2d3b;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  th {
+    display: none;
+  }
+
+  td {
+    position: relative;
+    padding-left: 50%;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    font-weight: 600;
+    color: #4e73df;
+  }
+}
+    
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px;
+  color: #555;
+}
